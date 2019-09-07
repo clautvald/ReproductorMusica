@@ -8,17 +8,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-Button registro;
+Button ingresar;
 TextView nuevo_registro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        registro = findViewById(R.id.registro);
+        ingresar = findViewById(R.id.ingresar);
         nuevo_registro = findViewById(R.id.txt_cta);
 
-        registro.setOnClickListener(new View.OnClickListener() {
+        ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Generos.class);

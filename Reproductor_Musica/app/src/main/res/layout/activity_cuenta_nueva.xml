@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="#000000"
     tools:context=".Cuenta_nueva">
 
 
@@ -13,7 +14,7 @@
         android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.5"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="NUEVO REGISTRO"
@@ -23,48 +24,75 @@
     <EditText
         android:id="@+id/txt_nombre"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
+        android:ems="9"
         android:gravity="center"
+        android:layout_gravity="center"
         android:hint="Ingresa tu nombre"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/txt_correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
+        android:ems="9"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:hint="Ingresa tu correo"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/txt_alias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
+        android:ems="9"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:hint="Ingresa tu Alias"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/txt_contras"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
+        android:ems="9"
         android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:hint="Ingresa tu contraseña" />
 
     <EditText
         android:id="@+id/txt_fecha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
+        android:ems="9"
         android:inputType="text|number"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:hint="Fecha de Nacimiento"/>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:text="Acepta los términos y condiciones" />
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="120dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:text="Registrar" />
 
 
 </LinearLayout>

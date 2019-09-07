@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     android:padding="20dp"
-    tools:context=".Generos">
+    android:background="#000000"
+    tools:context=".Playlist">
 
 </android.support.constraint.ConstraintLayout>

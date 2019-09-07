@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="20dp"
     tools:context=".Cuenta_nueva">
 
 
@@ -14,9 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_gravity="center"
         android:gravity="center"
         android:text="NUEVO REGISTRO"
         android:textSize="20dp" />
+
 
     <EditText
         android:id="@+id/txt_nombre"
@@ -35,7 +37,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:hint="Ingresa tu correo"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/txt_alias"
@@ -47,22 +49,22 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txt_contras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPassword"
+        android:hint="Ingresa tu contraseña" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txt_fecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="text|number"
+        android:hint="Fecha de Nacimiento"/>
 
 
 </LinearLayout>

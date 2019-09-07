@@ -18,7 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Generos" />
-        <activity android:name=".Cuenta_nueva"></activity>
+        <activity android:name=".Cuenta_nueva" />
+        <activity android:name=".ListaMusical" />
+        <activity android:name=".Generos2" />
+        <activity android:name=".Reproductor"></activity>
     </application>
 
 </manifest>

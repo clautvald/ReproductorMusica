@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tecsup.reproductor_musica">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +22,8 @@
         <activity android:name=".Terminos_condiciones" />
         <activity android:name=".Listas_genero" />
         <activity android:name=".Playlist" />
-        <activity android:name=".Reproductor"></activity>
+        <activity android:name=".Reproductor" />
+        <activity android:name=".Perfil_usuario"></activity>
     </application>
 
 </manifest>

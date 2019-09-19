@@ -21,7 +21,8 @@
         <activity android:name=".Cuenta_nueva" />
         <activity android:name=".Terminos_condiciones" />
         <activity android:name=".Listas_genero" />
-        <activity android:name=".Playlist"></activity>
+        <activity android:name=".Playlist" />
+        <activity android:name=".Reproductor"></activity>
     </application>
 
 </manifest>

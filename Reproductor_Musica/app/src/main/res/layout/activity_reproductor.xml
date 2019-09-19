@@ -9,6 +9,151 @@
     android:padding="15dp">
 
 
+ <ImageView
+     android:id="@+id/ImagenArtista"
+     android:layout_width="311dp"
+     android:layout_height="249dp"
+     android:layout_marginStart="8dp"
+     android:layout_marginTop="60dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="8dp"
+     app:layout_constraintBottom_toTopOf="@+id/artista"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:srcCompat="@drawable/button_background" />
 
+ <Button
+     android:id="@+id/menu"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginStart="8dp"
+     android:layout_marginEnd="8dp"
+     android:text="Button"
+     app:layout_constraintEnd_toStartOf="@+id/menu2"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
 
- </android.support.constraint.ConstraintLayout>
+ <Button
+     android:id="@+id/favorito"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginEnd="28dp"
+     android:layout_marginBottom="4dp"
+     android:text="Button"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/siguiente" />
+
+ <Button
+     android:id="@+id/compartir"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginEnd="32dp"
+     android:layout_marginBottom="4dp"
+     android:text="Button"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/play" />
+
+ <Button
+     android:id="@+id/siguiente"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginEnd="4dp"
+     android:layout_marginBottom="72dp"
+     android:text="Button"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+
+ <Button
+     android:id="@+id/play"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginEnd="24dp"
+     android:layout_marginBottom="72dp"
+     android:text="Button"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/favorito" />
+
+ <Button
+     android:id="@+id/anterior"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginStart="4dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="72dp"
+     android:text="Button"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/compartir"
+     app:layout_constraintHorizontal_bias="0.75"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <Button
+     android:id="@+id/menu2"
+     android:layout_width="49dp"
+     android:layout_height="46dp"
+     android:layout_marginEnd="8dp"
+     android:text="Button"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <SeekBar
+     android:id="@+id/seekBar"
+     android:layout_width="338dp"
+     android:layout_height="22dp"
+     android:layout_marginStart="8dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="152dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <TextView
+     android:id="@+id/cancion"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="8dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="8dp"
+     android:text="TextView"
+     app:layout_constraintBottom_toTopOf="@+id/seekBar"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <TextView
+     android:id="@+id/artista"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="8dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="8dp"
+     android:text="TextView"
+     app:layout_constraintBottom_toTopOf="@+id/cancion"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <EditText
+     android:id="@+id/editText2"
+     android:layout_width="51dp"
+     android:layout_height="20dp"
+     android:layout_marginStart="8dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="132dp"
+     android:ems="10"
+     android:inputType="time"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toStartOf="@+id/editText3"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="parent" />
+
+ <EditText
+     android:id="@+id/editText3"
+     android:layout_width="51dp"
+     android:layout_height="20dp"
+     android:layout_marginEnd="8dp"
+     android:layout_marginBottom="132dp"
+     android:ems="10"
+     android:inputType="time"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

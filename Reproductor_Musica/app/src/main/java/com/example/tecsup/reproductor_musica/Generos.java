@@ -37,7 +37,7 @@ public class Generos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generos);
         recyclerView = findViewById(R.id.rv_mostarGenero);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
 
         ExtraerJSON("a");
     }
@@ -99,7 +99,7 @@ public class Generos extends AppCompatActivity {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQCw4j4SSzz3IDI2UDwh2zd9jIqsxgFM-ambXNiJLywhh0Xg8_FZMYm1bVVjyK52ES2r9G9GBb5Wbac3O92RhAI91hbmQ8xW9El5UpQxW6EFxmoID4kWcxWkZglEQKakeyea8-NOaKQGMhc75pOLu9UupQ");
+                params.put("Authorization", "Bearer BQBH5wiSD5Bp00j-lnRvc55ykGfXkGOChSUrDjkwXx0kc27EK-KOr_xIobPdVdsq0_gQuXhYkQ6hRBnngYxF3nd0gH3G0tFxXCJxPN9DisINse0X0bY9lY86XmPAWEcqSuYAitp_judrxGf7UYyg-yjn-w");
 
                 return params;
             }

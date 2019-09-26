@@ -1,10 +1,12 @@
 package com.example.tecsup.reproductor_musica;
 
-public class generoListas {
+public class GeneroListas {
     private String listaDeGeneros;
+    private String imagenGenero;
 
-    public generoListas(String listaDeGeneros) {
+    public GeneroListas(String listaDeGeneros, String imagenGenero) {
         this.listaDeGeneros = listaDeGeneros;
+        this.imagenGenero = imagenGenero;
     }
 
     public String getListaDeGeneros() {
@@ -13,5 +15,13 @@ public class generoListas {
 
     public void setListaDeGeneros(String listaDeGeneros) {
         this.listaDeGeneros = listaDeGeneros;
+    }
+
+    public String getImagenGenero() {
+        return imagenGenero;
+    }
+
+    public void setImagenGenero(String imagenGenero) {
+        this.imagenGenero = imagenGenero;
     }
 }

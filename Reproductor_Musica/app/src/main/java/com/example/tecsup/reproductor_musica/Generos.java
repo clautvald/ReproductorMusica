@@ -47,7 +47,7 @@ public class Generos extends AppCompatActivity {
         Response.Listener<String> response_listener = new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                List<generoListas> genero= new ArrayList<>();
+                List<GeneroListas> genero= new ArrayList<>();
                 Log.e("Responsess",response);
 
                 try {
@@ -55,14 +55,13 @@ public class Generos extends AppCompatActivity {
                     JSONArray items = categoriasjs.getJSONArray("items");
 
 
-
                     System.out.println("*****JARRAY*****"+items.length());
                     for(int i=0;i<items.length();i++){
                         JSONObject json_dataG = items.getJSONObject(i);
                         TextView tx= new TextView(getBaseContext());
-                        genero.add(new generoListas(json_dataG.getString("name")));
+                        genero.add(new GeneroListas(json_dataG.getString("name"),""));
 
-                        adaptadorGenero = new Genero_Adaptador(genero);
+                        adaptadorGenero = new Genero_Adaptador(genero,Generos.this);
                         recyclerView.setAdapter(adaptadorGenero);
                         //tx.setText(json_data.getString("name"));
                     }
@@ -99,8 +98,7 @@ public class Generos extends AppCompatActivity {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQBH5wiSD5Bp00j-lnRvc55ykGfXkGOChSUrDjkwXx0kc27EK-KOr_xIobPdVdsq0_gQuXhYkQ6hRBnngYxF3nd0gH3G0tFxXCJxPN9DisINse0X0bY9lY86XmPAWEcqSuYAitp_judrxGf7UYyg-yjn-w");
-
+                params.put("Authorization", "Bearer BQCs7jFz8cU0bypRB6pNNvSlhi6EcTf6M0JFtPzQSyK7oJ6tfZIgnSlmYY0_6JX5ynMZpe51flzvvg1iQkPq41z6v7H9gCF8ryI4i2iXR-Xxjdjyfpkr27hEzPSSignTNVGiVeq4nOzIltTqIBYm5Bz3qg");
                 return params;
             }
         };

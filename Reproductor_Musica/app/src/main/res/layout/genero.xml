@@ -2,21 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
+    android:layout_height="100dp"
     android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
     android:layout_marginEnd="10dp"
-    android:layout_height="100dp">
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
 
     <android.support.v7.widget.CardView
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="300dp"
+        android:layout_gravity="center">
 
         <Button
-            android:id="@+id/txt_genero"
+            android:id="@+id/btn_genero"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/fondo"

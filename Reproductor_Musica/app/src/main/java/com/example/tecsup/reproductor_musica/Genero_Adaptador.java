@@ -1,24 +1,29 @@
 package com.example.tecsup.reproductor_musica;
 
 import android.content.Context;
-import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-import okio.Buffer;
+public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
+    public List<GeneroListas> generoLista;
+    LayoutInflater inflater;
+    Context context;
+    Drawable imagen;
 
-public class Genero_Adaptador extends RecyclerView.Adapter<Genero_Adaptador.ViewHolder> {
+    public Genero_Adaptador(List<GeneroListas> generoLista, Context context) {
+        this.generoLista = generoLista;
+        this.context = context;
+    }
 
-
-    public class ViewHolder extends  RecyclerView.ViewHolder{
+    /*public class ViewHolder extends  RecyclerView.ViewHolder{
         private Button txt_genero;
         Context context;
         public ViewHolder(@NonNull final View itemView) {
@@ -33,25 +38,20 @@ public class Genero_Adaptador extends RecyclerView.Adapter<Genero_Adaptador.View
             });
         }
 
-    }
-
-    public List<generoListas> generoLista;
-
-    public Genero_Adaptador(List<generoListas> generoLista) {
-        this.generoLista = generoLista;
-    }
+    }*/
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.genero,parent,false);
-        ViewHolder viewholder = new ViewHolder(view);
-        return viewholder;
+    public Genero_item onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View v = inflater.inflate(R.layout.genero,viewGroup,false);
+        return new Genero_item(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txt_genero.setText(generoLista.get(position).getListaDeGeneros());
+    public void onBindViewHolder(@NonNull Genero_item holder, int position) {
+        holder.genero.setText(generoLista.get(position).getListaDeGeneros());
+        //Glide.with(context).load(generoLista.get(position).getImagenGenero()).into(imagen);
+        holder.genero.setBackground(imagen);
     }
 
     @Override

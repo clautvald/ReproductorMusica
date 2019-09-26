@@ -32,6 +32,7 @@ import java.util.Map;
 public class Perfil_usuario extends AppCompatActivity {
 TextView nombre;
 ImageView imagenperfil;
+TextView ciudad;
 TextView correo;
 TextView tipo_usuario;
 TextView follower;
@@ -41,6 +42,7 @@ TextView follower;
         setContentView(R.layout.activity_perfil_usuario);
         nombre = findViewById(R.id.txt_nombre);
         imagenperfil = findViewById(R.id.imagen_perfil);
+        ciudad = findViewById(R.id.txt_pais);
         correo = findViewById(R.id.txt_correo);
         follower = findViewById(R.id.follower);
         tipo_usuario = findViewById(R.id.tipo_usuario);
@@ -59,17 +61,26 @@ TextView follower;
                 Log.e("Responsess",response);
 
                 try {
-                    String minombre = new JSONObject(response).getString("display_name");
+                    JSONObject principal = new JSONObject(response);
+                    String minombre = principal.getString("display_name");
+                    nombre.setText(minombre);
+
                     //Extraer un array de imagenes
                     JSONArray arrayFotos = new JSONObject(response).getJSONArray("images");
                     //saca un objeto de la posicion 0
                     JSONObject valor = arrayFotos.getJSONObject(0);
                     String urlfoto= valor.getString("url");
                     Log.e("resultado",urlfoto);
-                    nombre.setText(minombre);
                     Picasso.with(getBaseContext()).load(urlfoto).into(imagenperfil);
-
-
+                    String pais = principal.getString("country");
+                    ciudad.setText(pais);
+                    String micorreo = principal.getString("email");
+                    correo.setText(micorreo);
+                    JSONObject followers = principal.getJSONObject("followers");
+                    String follower_total = followers.getString("total");
+                    follower.setText(follower_total);
+                    String tipodeusuario = principal.getString("product");
+                    tipo_usuario.setText(tipodeusuario);
 
 
                 } catch (JSONException e) {
@@ -105,7 +116,7 @@ TextView follower;
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQAKlV0lmtL5YO5pa_aEYYQK3HkQQilKLobEYH8Y-EjaKgjOZo9MMcyml69nhhjmR_mv16lwLoyAkjo0-pXtbpsw9_THiV_4Pv9xusTGj5GEANGKWzD7nO1kYTh5-TYgixm7J-G_oQKh4oadF1yqUxhyHFIE46c-uR8");
+                params.put("Authorization", "Bearer BQCaVY4_QEuAYiJrclws14mgsnNo_zh2S30V-yllUwRsgQdE7eVFHaSUS-oy9b-s2c3TSX-PmVsMh-QGnWGSqfoI9vT3r2cRdn66YDHLP-7oQ0pitt8eQQEPIjDXnqRsD3JmOhTvF9-nbPCfMVpOl2CGBtCInA1tI0M");
 
                 return params;
             }

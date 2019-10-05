@@ -13,7 +13,8 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
-    public List<GeneroListas> generoLista;
+
+    List<GeneroListas> generoLista;
     LayoutInflater inflater;
     Context context;
     Drawable imagen;
@@ -23,27 +24,10 @@ public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
         this.context = context;
     }
 
-    /*public class ViewHolder extends  RecyclerView.ViewHolder{
-        private Button txt_genero;
-        Context context;
-        public ViewHolder(@NonNull final View itemView) {
-            super(itemView);
-            txt_genero = itemView.findViewById(R.id.txt_genero);
-            txt_genero.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(context,Listas_genero.class);
-                    context.startActivity(intent);
-                }
-            });
-        }
-
-    }*/
-
     @NonNull
     @Override
     public Genero_item onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = inflater.inflate(R.layout.genero,viewGroup,false);
+        View v = inflater.from(viewGroup.getContext()).inflate(R.layout.genero,viewGroup,false);
         return new Genero_item(v);
     }
 

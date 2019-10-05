@@ -98,7 +98,7 @@ public class Generos extends AppCompatActivity {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQCs7jFz8cU0bypRB6pNNvSlhi6EcTf6M0JFtPzQSyK7oJ6tfZIgnSlmYY0_6JX5ynMZpe51flzvvg1iQkPq41z6v7H9gCF8ryI4i2iXR-Xxjdjyfpkr27hEzPSSignTNVGiVeq4nOzIltTqIBYm5Bz3qg");
+                params.put("Authorization", "Bearer BQB8Rv80GTBcx9LSkD_X6VtTl0W-t6wWwLfFnTWG92L7WJLrcSk8NArXcE20TAI0ts0DQZ_2qvrJ_O2vK6TThV4h2vt0GLPBCNXOLKxbC6mIhC6H6jZp33PDiMKDLg_A8HrNYlXEWU92k6SvxaTaXZuh1A");
                 return params;
             }
         };

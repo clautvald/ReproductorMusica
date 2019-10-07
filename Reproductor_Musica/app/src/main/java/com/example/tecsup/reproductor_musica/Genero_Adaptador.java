@@ -27,7 +27,7 @@ public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
     @Override
     public Genero_item onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v = inflater.from(viewGroup.getContext()).inflate(R.layout.genero,viewGroup,false);
-        return new Genero_item(v);
+        return new Genero_item(v,context);
     }
 
     @Override

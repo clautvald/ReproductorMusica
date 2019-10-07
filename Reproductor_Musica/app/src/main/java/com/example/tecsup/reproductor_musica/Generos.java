@@ -44,12 +44,17 @@ public class Generos extends Fragment {
         View view = inflater.inflate(R.layout.activity_generos,container,false);
 
         recyclerView = view.findViewById(R.id.rv_mostarGenero);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
 
-        ExtraerJSON("a");
         return view;
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
+
+        ExtraerJSON("a");
+    }
     /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +119,7 @@ public class Generos extends Fragment {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQC2LHiSGrUVH30HSfMXtlCY-uOA-Q6ZbH8_DbtAJUUo3nfwguGSx3HQfx0jUrWlR8r5QHn32rIm5PBa7OT419YeSa2AJLoPs3-WsCKQH-0dkK0zTOeBUBlNLA-J93SC-DcW60OBUqCzJPcPrUPahfotjg");
+                params.put("Authorization", "Bearer BQCOnCRCdgm8YPiaZqnFF_eELR6iGpCQ6mi3YlmGbnZrB0ZJsqLm3I-7eBIC2Dc7dQVjPNTaHebezvjlVWMTx7tftiwx1HcZV4m3cr0gEChx3PcKNac4tlgBGqryU9QzPYOc-fjKFXHEroUE2GllGcAxKQ");
                 return params;
             }
         };

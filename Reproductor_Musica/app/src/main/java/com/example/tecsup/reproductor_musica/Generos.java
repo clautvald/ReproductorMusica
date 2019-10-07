@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkError;
@@ -37,7 +36,7 @@ public class Generos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generos);
         recyclerView = findViewById(R.id.rv_mostarGenero);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
         ExtraerJSON("a");
     }
@@ -57,9 +56,11 @@ public class Generos extends AppCompatActivity {
 
                     System.out.println("*****JARRAY*****"+items.length());
                     for(int i=0;i<items.length();i++){
-                        JSONObject json_dataG = items.getJSONObject(i);
-                        TextView tx= new TextView(getBaseContext());
-                        genero.add(new GeneroListas(json_dataG.getString("name"),""));
+                        JSONObject json_Generos = items.getJSONObject(i);
+                        JSONArray iconos =json_Generos.getJSONArray("icons");
+                        JSONObject json_Iconos = iconos.getJSONObject(0);
+                        //TextView tx= new TextView(getBaseContext());
+                        genero.add(new GeneroListas(json_Generos.getString("name"),json_Iconos.getString("url")));
 
                         adaptadorGenero = new Genero_Adaptador(genero,Generos.this);
                         recyclerView.setAdapter(adaptadorGenero);
@@ -98,7 +99,7 @@ public class Generos extends AppCompatActivity {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQB8Rv80GTBcx9LSkD_X6VtTl0W-t6wWwLfFnTWG92L7WJLrcSk8NArXcE20TAI0ts0DQZ_2qvrJ_O2vK6TThV4h2vt0GLPBCNXOLKxbC6mIhC6H6jZp33PDiMKDLg_A8HrNYlXEWU92k6SvxaTaXZuh1A");
+                params.put("Authorization", "Bearer BQBdAfn-_zmcIwB6cpD3S4eImJjd8ClXCSZbcUN6ViOJEzHdwANSCK1OfbLnL-BahFGxDnu74Nb-E7Q4AC6hwT0C-dddqhUfgSEmTiEXgXRgsHQFun8a18X7x6hb8vRMZAdISaG-JQNT5frE2ugVchaNLQ");
                 return params;
             }
         };

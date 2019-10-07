@@ -17,7 +17,6 @@ public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
     List<GeneroListas> generoLista;
     LayoutInflater inflater;
     Context context;
-    Drawable imagen;
 
     public Genero_Adaptador(List<GeneroListas> generoLista, Context context) {
         this.generoLista = generoLista;
@@ -34,8 +33,7 @@ public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
     @Override
     public void onBindViewHolder(@NonNull Genero_item holder, int position) {
         holder.genero.setText(generoLista.get(position).getListaDeGeneros());
-        //Glide.with(context).load(generoLista.get(position).getImagenGenero()).into(imagen);
-        holder.genero.setBackground(imagen);
+        Glide.with(context).load(generoLista.get(position).icons).into(holder.fotoGenero);
     }
 
     @Override

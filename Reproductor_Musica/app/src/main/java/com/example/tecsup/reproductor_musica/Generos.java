@@ -1,10 +1,16 @@
 package com.example.tecsup.reproductor_musica;
 
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkError;
@@ -28,18 +34,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Generos extends AppCompatActivity {
+public class Generos extends Fragment {
     RecyclerView recyclerView;
     Genero_Adaptador adaptadorGenero;
+
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_generos);
-        recyclerView = findViewById(R.id.rv_mostarGenero);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_generos,container,false);
+
+        recyclerView = view.findViewById(R.id.rv_mostarGenero);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
 
         ExtraerJSON("a");
+        return view;
     }
+
+    /*@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }*/
 
     RequestQueue mRequestQueue;
     private void ExtraerJSON(String urlspoty) {
@@ -62,7 +77,7 @@ public class Generos extends AppCompatActivity {
                         //TextView tx= new TextView(getBaseContext());
                         genero.add(new GeneroListas(json_Generos.getString("name"),json_Iconos.getString("url")));
 
-                        adaptadorGenero = new Genero_Adaptador(genero,Generos.this);
+                        adaptadorGenero = new Genero_Adaptador(genero,getActivity());
                         recyclerView.setAdapter(adaptadorGenero);
                         //tx.setText(json_data.getString("name"));
                     }
@@ -99,7 +114,7 @@ public class Generos extends AppCompatActivity {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQBdAfn-_zmcIwB6cpD3S4eImJjd8ClXCSZbcUN6ViOJEzHdwANSCK1OfbLnL-BahFGxDnu74Nb-E7Q4AC6hwT0C-dddqhUfgSEmTiEXgXRgsHQFun8a18X7x6hb8vRMZAdISaG-JQNT5frE2ugVchaNLQ");
+                params.put("Authorization", "Bearer BQC2LHiSGrUVH30HSfMXtlCY-uOA-Q6ZbH8_DbtAJUUo3nfwguGSx3HQfx0jUrWlR8r5QHn32rIm5PBa7OT419YeSa2AJLoPs3-WsCKQH-0dkK0zTOeBUBlNLA-J93SC-DcW60OBUqCzJPcPrUPahfotjg");
                 return params;
             }
         };
@@ -109,7 +124,7 @@ public class Generos extends AppCompatActivity {
 
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
-            mRequestQueue = Volley.newRequestQueue(getApplicationContext());
+            mRequestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         }
         return mRequestQueue;
     }

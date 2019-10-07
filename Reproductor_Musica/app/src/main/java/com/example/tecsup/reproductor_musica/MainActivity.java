@@ -21,7 +21,7 @@ TextView nuevo_registro;
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Generos.class);
+                Intent intent = new Intent(MainActivity.this,Principal.class);
                 startActivity(intent);
             }
 

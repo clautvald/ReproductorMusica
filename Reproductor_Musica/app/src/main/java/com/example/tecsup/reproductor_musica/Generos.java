@@ -114,7 +114,7 @@ public class Generos extends Fragment {
                 Map<String, String>  params = new HashMap<String, String>();
                 params.put("Accept", "application/json");
                 params.put("Content-Type", "application/json");
-                params.put("Authorization", "Bearer BQC2LHiSGrUVH30HSfMXtlCY-uOA-Q6ZbH8_DbtAJUUo3nfwguGSx3HQfx0jUrWlR8r5QHn32rIm5PBa7OT419YeSa2AJLoPs3-WsCKQH-0dkK0zTOeBUBlNLA-J93SC-DcW60OBUqCzJPcPrUPahfotjg");
+                params.put("Authorization", "Bearer BQDVQZ641DHZeG_34zy4VMp-fCy-NZoH7IqdrvCMBQ36aUtxkS8pJhjLFnxZKlQexJPUm5LT8jP2_UiqfuKOd_zojZ_dFK6oNNaLCO-4O2nQw6j6QZwZRHDNrNBirBHnvUYA57BhhRYxcUg30QnOEn0pKQ");
                 return params;
             }
         };

@@ -24,7 +24,7 @@ public class Principal extends AppCompatActivity {
             Fragment selectedFragment = null;
             switch (menuItem.getItemId()){
                 case R.id.nav_inicio:
-                    //selectedFragment = new Generos();
+                    selectedFragment = new Generos_PlayList();
                     break;
 
                 case R.id.nav_Buscar:

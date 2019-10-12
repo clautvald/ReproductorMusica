@@ -9,6 +9,7 @@
         android:id="@+id/contenedor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:layout_above="@id/bottom_nav"/>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_nav"

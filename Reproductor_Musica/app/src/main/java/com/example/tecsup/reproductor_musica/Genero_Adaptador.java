@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 public class Genero_Adaptador extends RecyclerView.Adapter<Genero_item> {
-
     List<GeneroListas> generoLista;
     LayoutInflater inflater;
     Context context;

@@ -32,7 +32,7 @@ public class Principal extends AppCompatActivity {
                     break;
 
                 case R.id.nav_favoritos:
-                    //selectedFragment = new Generos();
+                    selectedFragment = new Generos_PlayList();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedor, selectedFragment).commit();

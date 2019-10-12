@@ -29,14 +29,13 @@ public class GeneroPL_Adaptador extends RecyclerView.Adapter<GeneroPL_item> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GeneroPL_item generoPL_item, int i) {
-        generoPL_item.genero.setText(generoLista.get(i).getListaDeGeneros());
-        Glide.with(context).load(generoLista.get(i).icons).into(generoPL_item.fotoGenero);
-
+    public void onBindViewHolder(@NonNull GeneroPL_item holder, int position) {
+        holder.genero.setText(generoLista.get(position).getListaDeGeneros());
+        Glide.with(context).load(generoLista.get(position).icons).into(holder.fotoGenero);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return generoLista.size();
     }
 }

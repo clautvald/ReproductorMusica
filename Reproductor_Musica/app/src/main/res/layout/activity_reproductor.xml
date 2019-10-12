@@ -34,7 +34,7 @@
      app:layout_constraintHorizontal_bias="0.0"
      app:layout_constraintStart_toStartOf="parent"
      app:layout_constraintTop_toTopOf="parent"
-     tools:src="@android:drawable/ic_menu_revert" />
+     android:src="@android:drawable/ic_menu_revert" />
 
  <ImageButton
      android:id="@+id/favorito"
@@ -45,7 +45,7 @@
      android:text="Button"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toStartOf="@+id/siguiente"
-     tools:src="@android:drawable/ic_menu_share" />
+     android:src="@android:drawable/ic_menu_share" />
 
  <ImageButton
      android:id="@+id/compartir"
@@ -66,7 +66,7 @@
      android:text="Button"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
-     tools:src="@android:drawable/ic_media_next" />
+     android:src="@android:drawable/ic_media_next" />
 
  <ImageButton
      android:id="@+id/play"
@@ -78,7 +78,7 @@
 
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toStartOf="@+id/favorito"
-     tools:src="@android:drawable/ic_media_play" />
+     android:src="@android:drawable/ic_media_play" />
 
  <ImageButton
      android:id="@+id/anterior"
@@ -92,7 +92,7 @@
      app:layout_constraintEnd_toStartOf="@+id/compartir"
      app:layout_constraintHorizontal_bias="0.75"
      app:layout_constraintStart_toStartOf="parent"
-     tools:src="@android:drawable/ic_media_previous" />
+     android:src="@android:drawable/ic_media_previous" />
 
  <ImageButton
      android:id="@+id/menu2"
@@ -102,7 +102,7 @@
      android:text="Button"
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintTop_toTopOf="parent"
-     tools:src="@android:drawable/ic_menu_sort_by_size" />
+     android:src="@android:drawable/ic_menu_sort_by_size" />
 
  <SeekBar
      android:id="@+id/seekBar"

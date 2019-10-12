@@ -8,6 +8,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c6d5c1dd-c61f-40f2-a173-058e24d7c8d9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/Reproductor_Musica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/Reproductor_Musica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reproductor_Musica/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Reproductor_Musica/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,14 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="runConfigurations.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Reproductor_Musica/.idea/runConfigurations.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Playlist.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reproductor_Musica/app/src/main/java/com/example/tecsup/reproductor_musica/Playlist.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,10 +35,10 @@
       </file>
       <file leaf-file-name="activity_reproductor.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Reproductor_Musica/app/src/main/res/layout/activity_reproductor.xml">
-          <provider editor-type-id="text-editor">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="android-designer2">
+          <provider editor-type-id="text-editor">
             <state />
           </provider>
         </entry>
@@ -57,7 +58,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,13 +74,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Reproductor_Musica" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
@@ -178,9 +179,9 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -198,10 +199,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Reproductor_Musica/app/src/main/res/layout/activity_reproductor.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reproductor_Musica/.idea/runConfigurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reproductor_Musica/app/src/main/java/com/example/tecsup/reproductor_musica/Playlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reproductor_Musica/app/src/main/res/layout/activity_reproductor.xml">
       <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
         <state />
       </provider>
     </entry>

@@ -11,18 +11,20 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Generos" />
         <activity android:name=".Cuenta_nueva" />
         <activity android:name=".Terminos_condiciones" />
         <activity android:name=".Listas_genero" />
         <activity android:name=".Playlist" />
-        <activity android:name=".Reproductor"></activity>
+        <activity android:name=".Reproductor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
